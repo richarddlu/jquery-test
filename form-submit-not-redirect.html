@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+	<form id="my-form">
+		<input type="search">
+	</form>
+	<script>
+	$("#my-form").submit(function() {
+		window.alert("abc");
+		// return false prevents the page from redirecting
+		return false;
+	});
+	</script>
+</body>
+</html>
