@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<script>
+	function submitFunc() {
+		window.alert("submit");
+	}	
+	$(document).ready(function(){
+		$("#my-form2").submit(submitFunc);
+		$("#my-form3").submit(function(){
+			window.alert("submit");
+		});
+	});
+</script>
+<body>
+	<form id="my-form1" onsubmit="submitFunc()">
+		<input type="text">
+		<input type="submit">
+	</form>
+	<form id="my-form2">
+		<input type="text">
+		<input type="submit">
+	</form>
+	<form id="my-form3">
+		<input type="text">
+		<input type="submit">
+	</form>
+</body>
+</html>
