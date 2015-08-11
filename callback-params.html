@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<script>
+	function clickFunc(event) {
+		window.alert(event.data.name);
+	}	
+	$(document).ready(function(){
+		$("a").click({name:"Lu"}, clickFunc);
+	});
+</script>
+<body>
+	<a href="#">link</a>
+</body>
+</html>
